@@ -7,7 +7,7 @@ const zomato = new Zomato('9109f19fbfb0b547293f6fe2402f98f6')
 const app = express()
 
 
-app.use(express.static(path.join(__dirname, 'static')))
+app.use(express.static(path.join(__dirname, 'docs')))
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.post('/locations/:query', async (req, res) => 
