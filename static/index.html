@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Restaurant Random</title>
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <main>
+      <h1>Restaurant <span>Random</span></h1>
+      <br>
+        <p>Want to try out a new restaurant in your city but can't decide?</p>
+        <br>
+        <p>Use this website! Just enter your city name and click on submit it will randomly choose one of best restaurants in your city and show you the result</p>
+     
+      <br>
+      <form action="">
+        <div class="form-wrapper">
+          <label for="restaurant-name">Search</label>
+          <input name="restaurant-name" type="text" id="restaurant-name" placeholder="City Name">
+        </div>
+        <input type="submit">
+      </form>
+      <p> Please enter city names if for eg - if you are looking for noida it type delhi ncr and if you are looking for thane type mumbai.</p>
+    </main>
+    <hr>
+    <section id="restaurant-results">
+    </section>
+  </div>
+  
+  <template>
+    <div class="result-card">
+      <div class="result-header">
+        <h2 class="result-title">${title}</h2>
+        <h3 class="result-location result-neighborhood">${neighborhood}</h3>
+        <h3 class="result-location result-address">${address}</h3>
+        <p class="result-price">${price}</p>
+      </div>
+      <div class="result-body">
+        <img src="" alt="restaurant-photo" class="result-thumbnail">
+        </div>
+      <div class="result-footer">
+        <button class="result-footer-button"><a href="" target="_blank" class="result-website">Visit Website</a></button>
+      </div>
+    </div>
+  </template>
+  <script src="index.js"></script>
+</body>
+
+</html>

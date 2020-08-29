@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+.wrapper {
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+main > * {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 50px auto;
+}
+
+.form-wrapper {
+  width: 60%;
+  margin: 0 auto 25px auto;
+}
+
+.form-wrapper > * {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+input {
+  height: 40px;
+  padding: 0 15px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#restaurant-name,
+#city-name {
+  border: 1px solid lightgrey;
+}
+
+input[type='submit'] {
+  margin-bottom: 25px;
+  width: 60%;
+  border: 1px solid lightgrey;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+}
+
+input[type='submit']:focus {
+  outline: none;
+}
+
+#restaurant-results {
+  border: 1px solid red;
+}
+
+.result-card {
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.result-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.result-header > * {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.result-title {
+  font-size: 2.5em;
+  color: red;
+}
+
+.result-location {
+  font-size: 1.5em;
+}
+
+.result-location:first-child {
+  font-weight: 700;
+}
+
+.result-body {
+  height: 200px;
+}
+
+.result-footer {
+  display: flex;
+  justify-items: center;
+  border-top: 1px solid lightgrey;
+  padding-top: 10px;
+}
+
+.result-footer > button {
+  flex: 1;
+  height: 40px;
+}
+
+.result-footer > button:nth-child(2) {
+  margin: 0 10px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
