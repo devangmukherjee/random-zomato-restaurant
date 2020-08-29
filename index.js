@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const Zomato = require('zomato.js')
-const zomato = new Zomato('9109f19fbfb0b547293f6fe2402f98f6')
+const zomato = new Zomato('**************')
 
 const app = express()
 
